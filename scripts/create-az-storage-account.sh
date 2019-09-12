@@ -40,9 +40,9 @@ fi
 az group create -n $resourceGroupName -l $location
 
 # Check to ensure resource group was created
-rgCreated=$(az group exists -n $resourceGroupName --output tsv)
+rgExists=$(az group exists -n $resourceGroupName --output tsv)
 
-if [[ $rgCreated == "false"  ]]; then
+if [[ $rgExists == "false"  ]]; then
     echo "The script was not able to create Resource Group: $resourceGroupName."
     exit 1; 
 fi
@@ -61,3 +61,6 @@ fi
 # Create the container
 storageAccountKey1=$(az storage account keys list -n $storageAccountName -g $resourceGroupName --query '[0].value' -o tsv)
 az storage container create -n "demo" --account-name $storageAccountName --account-key $storageAccountKey1
+
+# Notify the user that azure resources have been created
+echo "The script has created the Azure Resources"

@@ -1,6 +1,6 @@
 # Overview
 
-This repository contains the sample ```ASP.Net``` Core 2.2 Web API and bash scripts that are used in the blog entry [How to Locally Debug a ASP.Net Core Web API that Receives Messages from Azure EventGrid](https://blog.michaeldeongreen.com/how-to-locally-debug-a-asp-net-core-webapi-that-receives-messages-from-azure-eventgrid).
+This repository contains the sample ```ASP.Net``` Core 2.2 Web API and bash scripts that are used in the blog entry [How to Locally Debug a ASP.Net Core Web API that Receives Messages from Azure EventGrid](https://blog.michaeldeongreen.com/post/how-to-locally-debug-a-asp-net-core-webapi-that-receives-messages-from-azure-eventgrid).
 
 ## Demo.WebApi ```ASP.Net``` Core 2.2 Web API
 

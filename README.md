@@ -6,6 +6,8 @@ This repository contains the sample ```ASP.Net``` Core 2.2 Web API and bash scri
 
 Sample application created in Visual Studio Code that is used to demonstrate how to locally debug a ```ASP.Net``` Core Web API that receives messages from Azure EventGrid.
 
+The Web API contains a Controller called *EventGridController* that contains code that can handle events from Azure EventGrid, including Azure EventGrid Subscription Validation Events.
+
 ## create-az-storage-account Bash Script
 
 Bash script used to create an Azure Blob Storage Account and a container called *demo* so a user can create a new Azure EventGrid Blob Created Subscription and upload a file.
